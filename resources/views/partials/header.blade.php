@@ -1,4 +1,10 @@
 <header>
+
+    <div class="header-top">
+        <span>DC power visa &reg;</span>
+        <span>additional dc sites</span>
+    </div>
+
     <div class="container">
       <div class="logo">
           <img src="{{ asset('images/dc-logo.png') }}" alt="">
@@ -58,7 +64,14 @@
         </nav>
     </div>
 
-    <div class="hero">
+    
+    {{-- <div class="hero">
         <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
-    </div>
+    </div> --}}
+
+    <div class="containerHero">
+        <div class="hero">
+            <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
+        </div>
+      </div>
 </header>

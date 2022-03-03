@@ -3,16 +3,20 @@
 @section('page-title','Home Page')
 
 @section('content')
-    <div class="fumetti">
-        <div class="container">
-            @foreach ($fumetti as $indice => $formato)
-            <div class="card">
-                <img src="{{$formato['thumb']}}" >
-                <div class="overlay">
-                    {{ $formato['title'] }}
+    <main>
+        <div class="fumetti">
+            <div class="container">
+                @foreach ($fumetti as $indice => $formato)
+                <div class="card">
+                    <div class="image">
+                        <img src="{{$formato['thumb']}}" >
+                    </div>
+                    <div class="text">
+                        {{ $formato['title'] }}
+                    </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
-        </div>
-    </div> 
+        </div> 
+    </main>
 @endsection

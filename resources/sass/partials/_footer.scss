@@ -1,0 +1,106 @@
+.barra_blu{
+    background-color: #0e7dec;
+    height: 150px;
+    display: flex;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.icone_barra_blu{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  
+  img{
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  a{
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+// Sottomenu
+
+.container_sottomenu{
+  overflow: hidden;
+  height: 400px;    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.sottomenu_lista{
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 45px;
+
+  img{
+    width: 80%;
+  }
+
+  .dc-comics, .shop, .dc, .sites{
+    display: flex;
+    flex-direction: column;            
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+
+      a{
+        color: gray;
+        text-transform: capitalize;
+        font-size: 11px;
+        margin: 4px 0;
+        font-weight: 200;
+        }
+      }
+    }
+
+// Footer social
+
+.container_bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_social{
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .icone{
+    color: #0e7dec;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  button{
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #0e7dec;
+    padding: 10px;
+    
+    h3{
+    color: #0e7dec;
+    }
+    img{
+      margin: 0 5px;
+    }
+  }
+}
+.icone img{
+  padding: 8px;
+}

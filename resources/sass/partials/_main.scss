@@ -1,33 +1,66 @@
-// main{
-//     position: relative;
-//     background-color: black;
-//   }
-//   .immagine_bottom{
-//     margin-top: 30px;
-//     height: 508px;
-//     display: flex;
-//   }
-//   button{
-//     background-color: $first_color;
-//     color: white;
-//     text-transform: uppercase;
-//     padding: 10px 15px;
-//     border: none;
-//   }
-//   .button_top{
-//     top: 304px;
-//     left: 160px;
-//     font-size: 18px;
-//     font-weight: bold;
-//     position: absolute;
-//   }
-//   .container_bottom{
-//     display: flex;
-//   }
-//   .button_bottom{
-//     width: 14%;
-//     margin: 15px auto;
-//     height: 43px;
-//     font-weight: bold;
-//   }
-  
+main{
+  position: relative;
+  background-color: black;
+}
+
+.immagine_bottom{
+  margin-top: 30px;
+  height: 508px;
+  display: flex;
+}
+button{
+  background-color: #0e7dec;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: none;
+}
+.button_top{
+  top: 304px;
+  left: 160px;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+}
+.container_bottom{
+  display: flex;
+}
+.button_bottom{
+  width: 14%;
+  margin: 15px auto;
+  height: 43px;
+  font-weight: bold;
+}
+.container{
+  margin: 20px auto;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  width: calc(100% / 6 - 20px);
+  margin: 20px 10px;
+  height: 200px;
+}
+
+.image{
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+
+  img{
+    width: 100%;
+  }
+}
+
+.text{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 200;
+    text-align: initial;
+    font-size: 12px;
+}
+
