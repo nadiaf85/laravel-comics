@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('layouts.app');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    // lettura dal DB
+    $array_fumetti = config('comics');
+    
+    // logica filtro sui dati
+
+    // restituisco la vista
+    return view('fumettiLista',['fumetti'=>$array_fumetti]);
 });
