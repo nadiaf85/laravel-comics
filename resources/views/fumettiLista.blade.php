@@ -18,5 +18,9 @@
                 @endforeach
             </div>
         </div> 
+
+        <div class="container_bottom">
+            <button class="button_bottom">load more</button>
+          </div>
     </main>
 @endsection

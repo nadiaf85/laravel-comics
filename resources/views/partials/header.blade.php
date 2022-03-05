@@ -64,14 +64,12 @@
         </nav>
     </div>
 
-    
-    {{-- <div class="hero">
-        <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
-    </div> --}}
-
     <div class="containerHero">
         <div class="hero">
             <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
         </div>
+    </div>
+    <div>
+        <button class="button_top">current series</button>
       </div>
 </header>

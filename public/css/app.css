@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;
-
-200;300;400;500&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap);* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,12 +14,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-top {
   background-color: #0e7dec;
+  padding: 6px;
+  width: 100%;
+  text-transform: uppercase;
   display: flex;
   justify-content: end;
 }
-
 .header-top span {
   margin: 0 10px;
   color: white;
@@ -43,13 +51,11 @@ body {
 nav {
   line-height: 80px;
 }
-
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
-
 nav li a {
   display: inline-block;
   color: #000;
@@ -76,20 +82,8 @@ nav li a {
   width: 100%;
   overflow: hidden;
 }
-
 .hero img {
   width: 100%;
-}
-
-main {
-  position: relative;
-  background-color: black;
-}
-
-.immagine_bottom {
-  margin-top: 30px;
-  height: 508px;
-  display: flex;
 }
 
 button {
@@ -101,11 +95,21 @@ button {
 }
 
 .button_top {
-  top: 304px;
-  left: 160px;
+  left: 164px;
   font-size: 18px;
   font-weight: bold;
   position: absolute;
+  bottom: -30px;
+  z-index: 999;
+}
+
+.search-bar input {
+  padding: 5px;
+}
+
+main {
+  position: relative;
+  background-color: black;
 }
 
 .container_bottom {
@@ -138,7 +142,6 @@ button {
   height: 170px;
   overflow: hidden;
 }
-
 .image img {
   width: 100%;
 }
@@ -150,6 +153,12 @@ button {
   font-weight: 200;
   text-align: initial;
   font-size: 12px;
+}
+
+footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .barra_blu {
@@ -170,16 +179,15 @@ button {
   align-items: center;
   font-size: 13px;
 }
-
+.icone_barra_blu a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .icone_barra_blu img {
   width: 40px;
   height: 50px;
   margin-right: 10px;
-}
-
-.icone_barra_blu a {
-  color: white;
-  text-transform: uppercase;
 }
 
 .container_sottomenu {
@@ -196,31 +204,27 @@ button {
   justify-content: space-between;
   margin-left: 45px;
 }
-
 .sottomenu_lista img {
   width: 80%;
 }
-
-.sottomenu_lista .dc-comics,
-.sottomenu_lista .shop,
-.sottomenu_lista .dc,
-.sottomenu_lista .sites {
+.sottomenu_lista span {
+  color: white;
+  margin-bottom: 10px;
+}
+.sottomenu_lista .dc-comics, .sottomenu_lista .shop, .sottomenu_lista .dc, .sottomenu_lista .sites {
   display: flex;
   flex-direction: column;
   font-weight: bold;
   font-size: 18px;
   margin-top: 5px;
 }
-
-.sottomenu_lista .dc-comics a,
-.sottomenu_lista .shop a,
-.sottomenu_lista .dc a,
-.sottomenu_lista .sites a {
+.sottomenu_lista .dc-comics a, .sottomenu_lista .shop a, .sottomenu_lista .dc a, .sottomenu_lista .sites a {
   color: gray;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 11px;
   margin: 4px 0;
   font-weight: 200;
+  text-decoration: none;
 }
 
 .container_bottom {
@@ -237,14 +241,12 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-
 .container_social .icone {
   color: #0e7dec;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-
 .container_social button {
   color: white;
   cursor: pointer;
@@ -252,11 +254,9 @@ button {
   border: 1px solid #0e7dec;
   padding: 10px;
 }
-
 .container_social button h3 {
   color: #0e7dec;
 }
-
 .container_social button img {
   margin: 0 5px;
 }
@@ -264,4 +264,3 @@ button {
 .icone img {
   padding: 8px;
 }
-
